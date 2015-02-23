@@ -1,0 +1,32 @@
+<!-- 在Android Studio中是这样写   xmlns:topbarcustom="http://schemas.android.com/apk/res-auto" -->
+<!-- 在Eclipse中是这样写   xmlns:topbarcustom="http://schemas.android.com/apk/res/com.mytopbar.app" -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:topbarcustom="http://schemas.android.com/apk/res/com.mytopbar.app"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context="com.example.mytopbar.MainActivity" >
+
+    <com.mytopbar.app.Topbar 
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        
+        topbarcustom:leftBackground="@drawable/blue_button"
+        topbarcustom:leftTextColor="#FFFFFF"
+        topbarcustom:leftText="Back"
+        
+        topbarcustom:rightBackground="@drawable/blue_button"
+        topbarcustom:rightTextColor="#FFFFFF"
+        topbarcustom:rightText="More"
+        
+        topbarcustom:title="自定义标题"
+        topbarcustom:titleTextColor="#123412"
+        topbarcustom:titleTextSize="10sp"
+        >
+        
+    </com.mytopbar.app.Topbar>
+
+</RelativeLayout>
